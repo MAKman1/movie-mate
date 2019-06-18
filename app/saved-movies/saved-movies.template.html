@@ -1,0 +1,24 @@
+<section class="features section">
+        <div class="container">
+            <h3 class="hero-title mt-0 pull-right">Movies You've saved</h1>
+            <div class="features-inner section-inner has-bottom-divider">
+                <div class="features-wrap">
+                    <div class="feature text-center is-revealing" style="visibility: visible;" ng-repeat="movie in $ctrl.movies">
+                        
+                            <div class="feature-inner">
+                                <div class="feature-icon">
+                                    <img style="border-radius: 50%; width:300px; height: 300px;object-fit: cover;object-position: center;" ng-src="{{movie.img}}" alt="Movie image">
+                                </div>
+                                <a style="text-decoration: none;" href="#!movies/{{movie.id}}">
+                                    <h4 class="feature-title mt-24">{{movie.name}}</h4>
+                                </a>
+                                <button ng-click="$ctrl.unsaveMovie(movie.id)" class="btn btn-danger">UNSAVE</button>
+                                <p class="text-sm mb-0">{{movie.details}}</p>
+                            </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    

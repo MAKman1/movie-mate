@@ -3,5 +3,8 @@
 angular.module('imdbApp', [
   'ngRoute',
   'home',
-  'movieDetails'
+  'movieDetails',
+  'savedMovies',
+  'suggestionButton',
+  'ngStorage' 
 ]);

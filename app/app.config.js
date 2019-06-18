@@ -5,12 +5,15 @@ angular.
   config(['$routeProvider',
     function config($routeProvider) {
       $routeProvider.
-        when('/', {
+        when('/home', {
           template: '<home></home>'
         }).
         when('/movies/:movieId', {
           template: '<movie-details></movie-details>'
         }).
-        otherwise('/');
+        when('/saved', {
+          template: '<saved-movies></saved-movies>'
+        }).
+        otherwise('/home');
     }
   ]);
