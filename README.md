@@ -1,1 +1,1 @@
-MovieMate
+A simple AngularJS application that utilized Tmdb's api to show trending movie based on selected genres and your taste and saves your movies and also suggests movies based on past movie genre choices.
